@@ -74,11 +74,12 @@ export const Pricing = () => {
               features,
             }) => (
               <div
+                key={title}
                 className={twMerge(
                   'card',
                   inverse === true && 'border-black bg-[#97b399] text-white'
                 )}>
-                <div className='flex justify-between'>
+                <div className='flex justify-between items-center'>
                   <h3
                     className={twMerge(
                       'text-lg font-bold text-black/50',
@@ -86,7 +87,7 @@ export const Pricing = () => {
                     )}>
                     {title}
                   </h3>
-                  =
+                  {popular && <div className='text-xs'>Popular</div>}
                 </div>
                 <div className='flex items-baseline gap-1 mt-[30px]'>
                   <span className='text-4xl font-bold tracking-tighter leading-none'>
