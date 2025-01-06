@@ -11,11 +11,11 @@ const pricingTiers = [
     popular: false,
     inverse: false,
     features: [
-      'Up to 5 project members',
-      'Unlimited tasks and projects',
-      '2GB storage',
-      'Integrations',
-      'Basic support',
+      'Manage up to 5 plants',
+      'Personalized care reminders (watering, pruning, etc.)',
+      'Basic plant database access',
+      'Track tasks like watering and fertilizing',
+      'Community support',
     ],
   },
   {
@@ -25,33 +25,29 @@ const pricingTiers = [
     popular: true,
     inverse: true,
     features: [
-      'Up to 50 project members',
-      'Unlimited tasks and projects',
-      '50GB storage',
-      'Integrations',
+      'Manage up to 50 plants',
+      'Advanced care reminders with custom schedules',
+      'In-depth plant database access with detailed care tips',
+      'Track unlimited tasks and maintenance logs',
       'Priority support',
-      'Advanced support',
-      'Export support',
+      'Exclusive features like plant health tracking and growth stats',
     ],
   },
   // sfsfhsfs
   {
     title: 'Business',
-    monthlyPrice: 19,
+    monthlyPrice: 25,
     buttonText: 'Sign up now',
     popular: false,
     inverse: false,
     features: [
-      'Up to 5 project members',
-      'Unlimited tasks and projects',
-      '200GB storage',
-      'Integrations',
-      'Dedicated account manager',
-      'Custom fields',
-      'Advanced analytics',
-      'Export capabilities',
-      'API access',
-      'Advanced security features',
+      'Manage unlimited plants',
+      'Team collaboration tools for shared plant care',
+      'Full plant database access with exotic plant profiles',
+      'Customizable reminders and care plans',
+      'Detailed analytics for plant health and growth tracking',
+      '5GB storage for plant photos and notes',
+      'Premium support with dedicated assistance',
     ],
   },
 ];
@@ -80,13 +76,13 @@ export const Pricing = () => {
               <div
                 className={twMerge(
                   'card',
-                  inverse === true && 'border-black bg-black text-white'
+                  inverse === true && 'border-black bg-[#97b399] text-white'
                 )}>
                 <div className='flex justify-between'>
                   <h3
                     className={twMerge(
                       'text-lg font-bold text-black/50',
-                      inverse === true && 'text-white/60'
+                      inverse === true && 'text-white/80'
                     )}>
                     {title}
                   </h3>
