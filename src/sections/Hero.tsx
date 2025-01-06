@@ -34,9 +34,9 @@ export const Hero = () => {
             </h1>
             <p className='text-xl text-[black] tracking-tight mt-6'>
               Get personalized reminders for watering, pruning, and fertilizing,
-              all tailored to your plant collection. Whether you're a seasoned
-              gardener or a new plant parent, our app helps your greenery thrive
-              with ease.
+              all tailored to your plant collection. Whether you&apos;re a
+              seasoned gardener or a new plant parent, our app helps your
+              greenery thrive with ease.
             </p>
             <div className='flex gap-1 items-center mt-[30px]'>
               <button className='btn btn-primary'>Get for free</button>
